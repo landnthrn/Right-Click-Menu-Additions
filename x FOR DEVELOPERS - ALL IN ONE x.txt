@@ -1,0 +1,227 @@
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+OPEN HERE IN POWERSHELL / COMMAND PROMPT
+
+INSTALL – open_here_shell_cmd.reg
+
+Windows Registry Editor Version 5.00
+
+; ==========================
+; Open PowerShell here (folder background)
+; ==========================
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\OpenPowershellHere]
+@="Open PowerShell here"
+"Icon"="powershell.exe"
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\OpenPowershellHere\command]
+@="cmd.exe /s /k \"cd /d \"%V\" & powershell.exe -NoLogo -NoExit -NoProfile\""
+
+
+; ==========================
+; Open PowerShell here (on folder)
+; ==========================
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\OpenPowershellHere]
+@="Open PowerShell here"
+"Icon"="powershell.exe"
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\OpenPowershellHere\command]
+@="cmd.exe /s /k \"cd /d \"%V\" & powershell.exe -NoLogo -NoExit -NoProfile\""
+
+
+; ==========================
+; Open CMD here (folder background)
+; ==========================
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\OpenCmdHere]
+@="Open CMD here"
+"Icon"="%SystemRoot%\\System32\\cmd.exe"
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\OpenCmdHere\command]
+@="cmd.exe /s /k \"cd /d \"%V\"\""
+
+
+; ==========================
+; Open CMD here (on folder)
+; ==========================
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\OpenCmdHere]
+@="Open CMD here"
+"Icon"="%SystemRoot%\\System32\\cmd.exe"
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\OpenCmdHere\command]
+@="cmd.exe /s /k \"cd /d \"%V\"\""
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+UNINSTALL – open_here_shell_cmd_uninstall.reg
+
+Windows Registry Editor Version 5.00
+
+[-HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\OpenPowershellHere]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\shell\OpenPowershellHere]
+
+[-HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\OpenCmdHere]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\shell\OpenCmdHere]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  
+
+COPY FILE NAME + COPY FILE NAME (NO EXTENSION)  
+
+INSTALL – copy_filename.reg
+
+Windows Registry Editor Version 5.00
+
+; ==========================
+; Copy file name (with extension)
+; ==========================
+[HKEY_CURRENT_USER\Software\Classes\*\shell\CopyFileName]
+@="Copy file name"
+"Icon"="%SystemRoot%\\System32\\shell32.dll,259"
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\CopyFileName\command]
+@="cmd.exe /c for %%A in (\"%1\") do @echo %%~nxA|clip"
+
+; ==========================
+; Copy file name (without extension)
+; ==========================
+[HKEY_CURRENT_USER\Software\Classes\*\shell\CopyFileNameNoExt]
+@="Copy file name (no extension)"
+"Icon"="%SystemRoot%\\System32\\shell32.dll,259"
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\CopyFileNameNoExt\command]
+@="cmd.exe /c for %%A in (\"%1\") do @echo %%~nA|clip"
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+UNINSTALL – copy_filename_uninstall.reg
+
+Windows Registry Editor Version 5.00
+
+[-HKEY_CURRENT_USER\Software\Classes\*\shell\CopyFileName]
+[-HKEY_CURRENT_USER\Software\Classes\*\shell\CopyFileNameNoExt]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+COPY SHA-256 / COPY MD5 CHECKSUM  
+
+INSTALL – copy_hashes.reg
+
+Windows Registry Editor Version 5.00
+
+; ==========================
+; Copy SHA-256 checksum
+; ==========================
+[HKEY_CURRENT_USER\Software\Classes\*\shell\CopySHA256]
+@="Copy SHA-256 checksum"
+"Icon"="%SystemRoot%\\System32\\shell32.dll,23"
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\CopySHA256\command]
+@="cmd.exe /c certutil -hashfile \"%1\" SHA256 | findstr /R /V \"hash of\" | clip"
+
+; ==========================
+; Copy MD5 checksum
+; ==========================
+[HKEY_CURRENT_USER\Software\Classes\*\shell\CopyMD5]
+@="Copy MD5 checksum"
+"Icon"="%SystemRoot%\\System32\\shell32.dll,23"
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\CopyMD5\command]
+@="cmd.exe /c certutil -hashfile \"%1\" MD5 | findstr /R /V \"hash of\" | clip"
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+UNINSTALL – copy_hashes_uninstall.reg
+
+Windows Registry Editor Version 5.00
+
+[-HKEY_CURRENT_USER\Software\Classes\*\shell\CopySHA256]
+[-HKEY_CURRENT_USER\Software\Classes\*\shell\CopyMD5]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+OPEN WITH NOTEPAD FOR ANY FILE  
+
+INSTALL – open_with_notepad.reg
+
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\OpenWithNotepad]
+@="Open with Notepad"
+"Icon"="notepad.exe"
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\OpenWithNotepad\command]
+@="notepad.exe \"%1\""
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+UNINSTALL – open_with_notepad_uninstall.reg
+
+Windows Registry Editor Version 5.00
+
+[-HKEY_CURRENT_USER\Software\Classes\*\shell\OpenWithNotepad]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+COPY AS PATH
+
+INSTALL – copy_as_path.reg
+
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\AllFilesystemObjects\shell\CopyAsPath]
+@="Copy as path"
+
+[HKEY_CLASSES_ROOT\AllFilesystemObjects\shell\CopyAsPath\Command]
+@="cmd.exe /c echo %1|clip"
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+UNINSTALL – copy_as_path_uninstall.reg
+
+Windows Registry Editor Version 5.00
+
+[-HKEY_CLASSES_ROOT\AllFilesystemObjects\shell\CopyAsPath]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

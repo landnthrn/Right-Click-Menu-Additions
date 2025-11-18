@@ -1,0 +1,91 @@
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+FILE EXPLORER RIGHT CLICK MENU ADDITIONS:
+
+Using these features requires making very simplistic changes to your registry, however most people that make ANY changes to their registry like to back it up first. 
+So although all of these .reg files are tested and safe, it doesn't hurt to make a system restore point first. (Optional)
+
+If any features somehow don't work for you there are uninstall files for each feature.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+HOW TO USE:
+
+All you need to do is double click the install .reg files > select `Yes` on the make changes to your device pop up > `Yes` on the disclaimer > `Ok` on the success confirmation 
+
+Test it with your File Explorer right click menu, on both blank space & a selected file > right click (dependant on the feature you installed)
+
+If any somehow didn't work for you, you can uninstall with the uninstall .reg's there is one for every install
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you can't see any changes after installing a feature, try restarting your File Explorer:
+
+Task Manager > Windows Explorer > Right Click > Restart
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ENJOY - landn.thrn
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Find more of my creations on Github:
+https://github.com/landnthrn?tab=repositories
+
+Support me on Buy Me a Coffee
+https://buymeacoffee.com/landn.thrn
+
+Paypal Donation:
+https://www.paypal.com/donate/?hosted_button_id=K4PLHFVBH7X8C
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

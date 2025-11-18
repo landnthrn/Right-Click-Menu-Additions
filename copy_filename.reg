@@ -1,0 +1,21 @@
+Windows Registry Editor Version 5.00
+
+; ==========================
+; Copy file name (with extension)
+; ==========================
+[HKEY_CURRENT_USER\Software\Classes\*\shell\CopyFileName]
+@="Copy file name"
+"Icon"="%SystemRoot%\\System32\\shell32.dll,259"
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\CopyFileName\command]
+@="cmd.exe /c for %%A in (\"%1\") do @echo %%~nxA|clip"
+
+; ==========================
+; Copy file name (without extension)
+; ==========================
+[HKEY_CURRENT_USER\Software\Classes\*\shell\CopyFileNameNoExt]
+@="Copy file name (no extension)"
+"Icon"="%SystemRoot%\\System32\\shell32.dll,259"
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\CopyFileNameNoExt\command]
+@="cmd.exe /c for %%A in (\"%1\") do @echo %%~nA|clip"

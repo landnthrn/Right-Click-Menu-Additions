@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\OpenPowershellHere]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\shell\OpenPowershellHere]
+
+[-HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\OpenCmdHere]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\shell\OpenCmdHere]

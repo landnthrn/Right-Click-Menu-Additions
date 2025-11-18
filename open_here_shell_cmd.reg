@@ -1,0 +1,44 @@
+Windows Registry Editor Version 5.00
+
+; ==========================
+; Open PowerShell here (folder background)
+; ==========================
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\OpenPowershellHere]
+@="Open PowerShell here"
+"Icon"="powershell.exe"
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\OpenPowershellHere\command]
+@="cmd.exe /s /k \"cd /d \"%V\" & powershell.exe -NoLogo -NoExit -NoProfile\""
+
+
+; ==========================
+; Open PowerShell here (on folder)
+; ==========================
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\OpenPowershellHere]
+@="Open PowerShell here"
+"Icon"="powershell.exe"
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\OpenPowershellHere\command]
+@="cmd.exe /s /k \"cd /d \"%V\" & powershell.exe -NoLogo -NoExit -NoProfile\""
+
+
+; ==========================
+; Open CMD here (folder background)
+; ==========================
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\OpenCmdHere]
+@="Open CMD here"
+"Icon"="%SystemRoot%\\System32\\cmd.exe"
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\OpenCmdHere\command]
+@="cmd.exe /s /k \"cd /d \"%V\"\""
+
+
+; ==========================
+; Open CMD here (on folder)
+; ==========================
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\OpenCmdHere]
+@="Open CMD here"
+"Icon"="%SystemRoot%\\System32\\cmd.exe"
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\OpenCmdHere\command]
+@="cmd.exe /s /k \"cd /d \"%V\"\""
