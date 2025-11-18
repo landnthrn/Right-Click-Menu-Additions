@@ -1,22 +1,26 @@
 
-<img width="315" height="611" alt="1" src="https://github.com/user-attachments/assets/44b51441-3ebd-4917-be0b-dafb3f3b182f" />
-<img width="228" height="369" alt="2" src="https://github.com/user-attachments/assets/485bd864-0d42-44b6-89db-1036d3eb2b22" />
-
-
+<img width="336" height="611" alt="X6F6stYOYh" src="https://github.com/user-attachments/assets/bf32767a-dafa-42b3-83fd-1c91db6f4609" />
+<img width="228" height="369" alt="griOMQmrNB" src="https://github.com/user-attachments/assets/eedc318a-935d-451b-bfa0-7d885c84e014" />
 
 # FILE EXPLORER RIGHT CLICK MENU ADDITIONS:
 
-Using these features requires making very simplistic changes to your registry.  
-However most people that make ANY changes to their registry like to back it up first.  
+These features work by making very simple entries to your registry.  
+However some people that make any changes to their registry like to back it up first.  
 So although all of these `.reg` files are tested and safe, it doesn't hurt to make a system restore point first. *(Optional)*
 
 If any features somehow don't work for you there are uninstall files for each feature.
+
+Pick & choose the ones you want they aren't bundled together
+
+**NOTE**  
+*The open PowerShell here option opens PowerShell inside of Command Prompt*
 
 ---
 
 # HOW TO USE:
 
-All you need to do is double click the install `.reg` files > select **Yes** on the make changes to your device pop up > **Yes** on the disclaimer > **Ok` on the success confirmation 
+All you need to do is double click the install `.reg` files  
+Select **Yes** on the make changes to your device pop up > **Yes** on the disclaimer > **Ok` on the success confirmation 
 
 Test it with your File Explorer right click menu, on both blank space & a selected file > right click *(dependant on the feature you installed)*
 
@@ -24,7 +28,7 @@ If any somehow a feature didn't work for you, you can uninstall with the uninsta
 
 ---
 
-If you can't see any changes after installing a feature, try restarting your File Explorer:
+**If you can't see any changes after installing a feature, try restarting your File Explorer:**
 
 Task Manager > Windows Explorer > Right Click > Restart
 
