@@ -45,4 +45,4 @@ Task Manager > Windows Explorer > Right Click > Restart
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-311A82?style=for-the-badge&logo=buymeacoffee&logoColor=white)](https://buymeacoffee.com/landn.thrn/extras)  
 [![PayPal](https://img.shields.io/badge/PayPal-311A82?style=for-the-badge&logo=paypal&logoColor=white)](https://www.paypal.com/donate/?hosted_button_id=K4PLHFVBH7X8C)
 
----
+![](https://github-view-counter-1-0-0.vercel.app/api?username=landnthrn-Right-Click-Menu-Additions&label=false&bgColor=20164C&color=6a5acd&iconColor=6a5acd)
